@@ -9,11 +9,9 @@
 <body>
   <h1>HTTP Request Tester API Documentation</h1>
 
-  <!-- Container for rendering YAML content -->
   <div id="swagger-ui"></div>
 
   <script>
-    // Your YAML content
     var yamlContent = `
       openapi: 3.0.0
       info:
@@ -93,7 +91,6 @@
                 description: I’m a teapot
     `;
 
-    // Parse YAML content and render it
     var swaggerDocument = jsyaml.load(yamlContent);
     window.onload = function() {
       const ui = SwaggerUIBundle({
